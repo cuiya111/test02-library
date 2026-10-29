@@ -34,7 +34,7 @@ npm run dev        # 开发方式，nodemon 热更新
 | GET | `/api/students` | — | 学生列表 |
 | POST | `/api/students` | name, studentNo, major?, className?, phone? | 新增学生（学号唯一） |
 | PUT | `/api/students/update` | id, name, studentNo, major?, className?, phone? | 更新学生 |
-| POST | `/api/students/delete` | id | 删除（有未还借阅则拒绝） |
+| DELETE | `/api/students/delete/id` | — | 删除（有未还借阅则拒绝） |
 
 ### 图书
 | 方法 | 路径 | body | 说明 |
@@ -42,7 +42,7 @@ npm run dev        # 开发方式，nodemon 热更新
 | GET | `/api/books` | — | 图书列表 |
 | POST | `/api/books` | title, author, isbn?, category?, publisher?, total, available? | 新增图书 |
 | PUT | `/api/books/update` | id, title, author, isbn?, category?, publisher?, total, available | 更新图书 |
-| POST | `/api/books/delete` | id | 下架（有未还借阅则拒绝） |
+| DELETE | `/api/books/delete/id` | — | 下架（有未还借阅则拒绝） |
 
 ### 借阅
 | 方法 | 路径 | body | 说明 |
